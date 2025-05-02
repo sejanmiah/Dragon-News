@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router';
+import { Link, NavLink } from 'react-router';
 
 const NavberBootom = () => {
     return (
@@ -12,7 +12,7 @@ const NavberBootom = () => {
             </div>
             <div className="login-btn flex items-center gap-1">
                 <img src="https://i.postimg.cc/ZnWkDN6k/user.png" alt="" />
-                <button className='btn bg-[#403F3F] text-white px-10 rounded-none'>Login</button>
+                <Link to='/auth/login' className='btn bg-[#403F3F] text-white px-10 rounded-none'>Login</Link>
             </div>
         </div>
     );
